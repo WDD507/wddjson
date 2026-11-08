@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-输出：
+将 `wddjson.hpp` 放入项目中，输出：
 
 ```
 [1,2.5,"hi",false]
@@ -49,7 +49,9 @@ int main() {
 ]
 ```
 
-## 编译与测试
+更多请见：`tests/test_json.cpp`
+
+## 编译与测试 (CMD)
 
 ```bat
 g++ -std=c++17 tests/test_json.cpp -o test_json.exe && test_json.exe
@@ -64,10 +66,11 @@ g++ -std=c++17 tests/test_json.cpp -o test_json.exe && test_json.exe
 
 - [x] 值类型基础：构造、类型判断、取值
 - [x] 序列化：`dump()` 紧凑 / 美化、字符串转义
-- [ ] 容器访问：`operator[]`、`at`、`contains`、`size`、`push_back`、`erase`
+- [x] 容器访问：`operator[]`、`at`、`contains`、`size`、`push_back`、`erase`
 - [ ] 解析器：`parse()`（递归下降，含 `\uXXXX` 解码）
 - [ ] 迭代器与 STL 风格接口、`operator==`
-- [ ] 增强功能：`merge_patch`、自定义类型转换
+- [ ] 增强功能：`merge_patch`、自定义类型转换等
+- [ ] 敬请期待更多……
 
 ## 许可证
 

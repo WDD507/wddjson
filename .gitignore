@@ -5,3 +5,6 @@
 build/
 
 *.png
+.screenshots/
+
+tests/*.json
